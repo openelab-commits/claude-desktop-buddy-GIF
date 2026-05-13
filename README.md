@@ -1,5 +1,5 @@
 # Claude Desktop Buddy GIF Edition for M5Stack StickS3
-
+<img width="1280" height="909" alt="20260513-175515" src="https://github.com/user-attachments/assets/d0ac10a8-12dd-4871-af1d-88e1d7359830" />
 This is a personal fork of Anthropic's
 [`claude-desktop-buddy`](https://github.com/anthropics/claude-desktop-buddy)
 reference firmware, focused on M5Stack StickS3, animated GIF pets, charging
