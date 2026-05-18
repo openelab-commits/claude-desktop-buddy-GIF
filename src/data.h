@@ -118,6 +118,7 @@ static void _applyJson(const char* line, TamaState* out) {
   // adjusted epoch yields local components including weekday.
   JsonArray t = doc["time"];
   if (!t.isNull() && t.size() == 2) {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     time_t local = (time_t)t[0].as<uint32_t>() + (int32_t)t[1];
     struct tm lt; gmtime_r(&local, &lt);
@@ -129,11 +130,16 @@ static void _applyJson(const char* line, TamaState* out) {
     extern uint32_t _clkLastRead;
     _clkLastRead = 0;   // force re-read so _clkDt and _rtcValid agree
 =======
+=======
+>>>>>>> dea2aa848667d0c4260df44081c89926be4a3074
     uint32_t utc = t[0].as<uint32_t>();
     dataSyncUtc(utc);
     time_t local = (time_t)utc + (int32_t)t[1];
     appRtcSynced(local);
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> dea2aa848667d0c4260df44081c89926be4a3074
     _rtcValid = true;
     _lastLiveMs = millis();
     return;

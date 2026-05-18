@@ -85,6 +85,7 @@ when Codex shows it.
 
 ## Included Skill
 
+<<<<<<< HEAD
 This plugin includes Codex skills for status, troubleshooting, and pet asset generation:
 
 ```text
@@ -93,6 +94,15 @@ skills/codex-usage-pet/SKILL.md
 ```
 
 They are installed with the plugin. No separate skill installation is required.
+=======
+This plugin includes a Codex skill for status and troubleshooting:
+
+```text
+skills/codex-usage-stick/SKILL.md
+```
+
+It is installed with the plugin. No separate skill installation is required.
+>>>>>>> dea2aa848667d0c4260df44081c89926be4a3074
 
 ## Dependency
 

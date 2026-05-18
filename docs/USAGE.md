@@ -73,12 +73,21 @@ The firmware reads GIF assets from LittleFS:
 PlatformIO creates LittleFS from the local `data/` folder. This project ignores
 `data/` in git, so you create it locally before `uploadfs`.
 
+<<<<<<< HEAD
 Use the included `Mao` character:
 
 ```bash
 rm -rf data
 mkdir -p data/characters/Mao
 cp -R characters/Mao/* data/characters/Mao/
+=======
+Use the included sample character:
+
+```bash
+rm -rf data
+mkdir -p data/characters/bufo
+cp -R characters/bufo/* data/characters/bufo/
+>>>>>>> dea2aa848667d0c4260df44081c89926be4a3074
 pio run -e m5stack-sticks3 -t uploadfs
 ```
 
@@ -86,8 +95,13 @@ Use your own character folder:
 
 ```bash
 rm -rf data
+<<<<<<< HEAD
 mkdir -p data/characters/MyPet
 cp -R /Users/you/Downloads/MyPet/* data/characters/MyPet/
+=======
+mkdir -p data/characters/Mao
+cp -R /Users/you/Downloads/Mao/* data/characters/Mao/
+>>>>>>> dea2aa848667d0c4260df44081c89926be4a3074
 pio run -e m5stack-sticks3 -t uploadfs
 ```
 
